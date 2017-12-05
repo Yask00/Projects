@@ -1,0 +1,151 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./img/background.png');
+}
+
+section {
+    min-height: 700px;
+}
+
+article {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 500px;
+    overflow: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+article img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+nav {
+    font-size: 2em;
+    width: 100%;
+    background-color: #ff4000;
+    float: left;
+    color: white;
+}
+
+nav p {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+footer {
+    background-color: gray;
+    font-size: 2em;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.basic-button {
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.green-button {
+    background-color: #4CAF50;
+}
+
+.red-button {
+    background-color: #f44336;
+}
+
+#addnew {
+    display: none;
+    position: fixed;
+    width:300px;
+    height:430px;
+    color: #ffffff;
+    background-color: #000000;
+    opacity: 0.9;
+    border: 1px solid gray;
+    right: 1%;
+    bottom: 1%;
+    z-index: 2147483646;
+    text-align: center;
+}
+
+#addnew i {
+    font-size: 1.5em;
+}
+
+#addnew form label {
+    display: block;
+}
+
+#addnew form label span {
+    color: rgb(248, 0, 0);
+}
+
+#addnew form input {
+    display: block;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000000;
+   
+}
+
+#addnew-close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+}
+
+#cart {
+    display: none;
+    position: fixed;
+    width:300px;
+    height:500px;
+    overflow: auto;
+    color: #ffffff;
+    background:rgb(0, 0, 0);
+    opacity: 0.9;
+    right: 1%;
+    top: 1%;
+    z-index: 2147483647;
+}
+
+#total-price-div {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#total-price {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#total-price span {
+    color: red;
+}
+
+#checkout-btn  {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-weight: bold;
+}

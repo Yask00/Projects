@@ -1,0 +1,87 @@
+/* CSS Documentation  */
+
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em {
+	margin:0;
+	padding:0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:20px;
+}
+
+body{
+	background-image: url("images/bodybackground.png");
+}
+
+#wrapper {
+	margin: 5px auto;
+	width: 580px;
+	height: 530px;
+	background-color: #ffffff;
+	border: 8px solid #005555;
+	background-image: url("images/background.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+h1{
+	text-align: center;
+	text-decoration: underline;
+}
+
+#submit {
+	margin-left: 10px;
+	margin-top: 45px;
+	width: 350px;
+	height: 400px;
+	float:left;
+	background-color: #999966;
+	text-align: center;
+	border-radius: 10px;
+}
+
+#number{
+	display: block;
+	margin: 5px auto;
+}
+
+#rules{
+	margin-left: 10px;
+	padding-top:5px;
+	margin-top: 60px;
+	text-align: center;
+	font-size: 25px;
+	width:200px;
+	float: left;
+	background-color: #b8b894;
+}
+
+#rulesList{
+	padding-top:10px;
+	padding-left:25px;
+	text-align: left;
+	list-style-type: disc;
+}
+
+#rulesList li {
+	padding-top: 3px;
+}
+
+#paragraphs {
+	width: 350px;
+	height: 300px;
+	overflow: auto;
+}
+
+#startNewGame{
+	color:white;
+	display: block;
+	margin: 0 auto;
+	padding: 5px;
+	background-color: black;
+	border:1px solid black;
+	border-radius: 2px;
+}
+
+#searchedNumber {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}

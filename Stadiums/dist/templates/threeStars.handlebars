@@ -1,0 +1,68 @@
+<nav class="small-nav">
+    <a href="/">Homepage</a>&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;
+    <a href="/#/threestars">Three Stars</a>
+</nav>
+
+<div id="title" class="index-title">
+    <h1>
+        Three Stars
+    </h1>
+    <div class="sub-title">
+        Category Description Goes Right Here
+    </div>
+</div>
+
+<section class="main-section">
+    <div class="posts-boxes">
+        {{#each this}}
+        <article class="single-post-box">
+            <h2>{{name}} - {{country}}, {{city}}</h2>
+            <div class="post-subtitle">
+                Posted By <span>admin</span> on march 12, 2011 in <span>Some Category </span>| 30 Comments
+            </div>
+            <div class="post-wrapper">
+                <div class="post-image">
+                    <img src="{{image}}" alt="{{name}}" style="width:188px; height: 188px;">
+                </div>
+                <div class="post-content">
+                    {{info}}
+                </div>
+            </div>
+            <div class="post-readmore">
+                <a class="targetLink" href="#/threestars/{{id}}" alt="">Read More</a>
+            </div>
+        </article>
+        {{/each}}
+    </div>
+
+    <aside class="aside-boxes">
+        <h3>From The Blog</h3>
+        <ul>
+            <li>Curabtur blandit rutrum felis pretium</li>
+            <li>Curabtur blandit rutrum felis </li>
+            <li>Curabtur blandit rutrum felis </li>
+            <li>Curabtur blandit rutrum felis pretium</li>
+            <li>Curabtur blandit rutrum felis </li>
+            <li>Curabtur blandit rutrum felis pretium</li>
+        </ul>
+        <h3>Archives</h3>
+        <ul>
+            <li>Curabtur blandit rutrum felis pretium</li>
+            <li>Curabtur blandit rutrum felis </li>
+            <li>Curabtur blandit rutrum felis </li>
+            <li>Curabtur blandit rutrum felis pretium</li>
+            <li>Curabtur blandit rutrum felis </li>
+            <li>Curabtur blandit rutrum felis pretium</li>
+        </ul>
+        <h3>Recent Posts</h3>
+        <ul>
+            <li>Curabtur blandit rutrum felis pretium</li>
+            <li>Curabtur blandit rutrum felis </li>
+            <li>Curabtur blandit rutrum felis </li>
+            <li>Curabtur blandit rutrum felis pretium</li>
+            <li>Curabtur blandit rutrum felis </li>
+            <li>Curabtur blandit rutrum felis pretium</li>
+        </ul>
+    </aside>
+
+</section>

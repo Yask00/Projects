@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <nav>
+        <p onclick="showCart()">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            &nbsp;CART&nbsp;
+        </p>
+    </nav>
+
+    <aside>
+        <button class="basic-button green-button addnew-button" onclick="toggleAddNew()">CREATE NEW PRODUCT</button>
+    </aside>
+
+    <div id="cart">
+        <div id="addnew-close-btn" onclick="showCart()">&nbsp;
+            <i class="fa fa-window-close" aria-hidden="true"></i>&nbsp;
+        </div>
+        <div id='total-price-div'>
+            <h2>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                &nbsp;Sopping Cart
+            </h2>
+            <button id="checkout-btn" onclick="calculateTotalPrice()">
+                Verify and Checkout
+            </button>
+        </div>
+    </div>
+
+    <div id="addnew">
+        <h3>Add/Edit Item</h3>
+
+        <div id="addnew-close-btn" onclick="toggleAddNew()">&nbsp;
+            <i class="fa fa-window-close" aria-hidden="true"></i>&nbsp;
+        </div>
+
+        <form action="javascript:void(0);">
+            <label for="title">Title
+                <span>(min 3, max 250)</span>
+            </label>
+            <input type="text" pattern=".{3,250}" required maxlength="250" name="title" id="itemTitle">
+            <br>
+
+            <label for="itemId">ID
+                <span>(DONT Type Here)</span>
+            </label>
+            <input type="text" required disabled name="itemId" id="itemId">
+            <br>
+
+            <label for="description">Description
+                <span>(min 5, max 500</span>)</label>
+            <input type="text" pattern=".{5,500}" required maxlength="500" name="description" id="itemDescription">
+            <br>
+
+            <label for="image">Image
+                <span>(.png or .jpeg)</span>
+            </label>
+            <input type="file" name="image" accept="image/x-png,image/jpeg" id="itemImage" />
+            <br>
+
+            <label for="quantity">Quantity
+                <span>(min 1)</span>
+            </label>
+            <input type="number" min="1" oninput="validity.valid||(value='');" name="quantity" id="itemQuantity">
+            <br>
+
+            <label for="price">Price
+                <span>(min 1)</span>
+            </label>
+            <input type="number" min="1" oninput="validity.valid||(value='');" name="price" id="itemPrice">
+            <br>
+
+            <button onclick="saveLocalStorage()">SUBMIT</button>
+        </form>
+    </div>
+
+    <section id="itemsSection">
+        <!-- HERE ARE LOADED ITEMS FROM LOCALSTORAGE -->
+    </section>
+
+    <footer>
+        FOOTER
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

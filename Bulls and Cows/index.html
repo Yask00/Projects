@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Bulls and Cows</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<h1>Крави и Бикове</h1>
+		<button id="startNewGame">Започни нова игра</button>
+		<div id="submit">
+			<h2>Въведете своето предположение и натиснете Enter:</h2>
+			<input type="text" id="number" autofocus>
+
+			<div id="paragraphs"></div>
+		</div>
+
+		<div id="rules">
+			Правила:
+			<ul id="rulesList">
+				<li>Имате десет опита да познаете търсеното число</li>
+				<li>Търсеното число не започва с 0, но може да съдържа нула</li>
+				<li>Моля използвайте само цифри</li>
+				<li>Всички четири цифри в числото са различни</li>
+			</ul>
+			<button id="searchedNumber">Вижте числото</button>
+		</div>
+		
+	</div>
+	<script src="game.js"></script>
+</body>
+
+</html>
