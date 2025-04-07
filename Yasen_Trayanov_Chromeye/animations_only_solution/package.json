@@ -1,0 +1,14 @@
+{
+  "name": "banner_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "light-server -s . -p 3001"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "light-server": "^2.5.1"
+  }
+}

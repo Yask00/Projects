@@ -1,0 +1,77 @@
+body,
+ul,
+div,
+li,
+p,
+span,
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#banner {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    background-color: #1569a0;
+    cursor: pointer;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.15s;
+    outline: 1px solid black;
+    font-family: Arial, sans-serif;
+}
+
+.whiteShape {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    z-index: 3;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 150px;
+    height: 100px;
+}
+
+#logo #svgLogo {
+    height: inherit;
+}
+
+#ball {
+    position: absolute;
+    top: -50px;
+    width: 60px;
+    height: 50px;
+}
+
+.text1,
+.text2 {
+    position: absolute;
+    right: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+.text1 {
+    top: 50px;
+    right: -400px;
+    font-size: 20px;
+}
+
+.text2 {
+    font-size: 14px;
+    left: 20px;
+    line-height: 20px;
+    top: 90px;
+}
